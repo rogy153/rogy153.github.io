@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#0a0d10" />
+  <meta name="robots" content="noindex, follow" />
+  <title>404 — Página não encontrada | Ygor Guimarães</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0d10'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='26' font-weight='700' fill='%2300e6a8'%3EYG%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .error-wrap {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 0.5rem;
+    }
+    .error-code {
+      font-family: var(--mono);
+      font-size: clamp(4rem, 18vw, 9rem);
+      font-weight: 700;
+      line-height: 1;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <main id="conteudo">
+    <div class="container error-wrap">
+      <p class="label">// erro 404</p>
+      <p class="error-code">404</p>
+      <h1>Página não encontrada</h1>
+      <p style="color: var(--muted); max-width: 46ch;">
+        O endereço acessado não existe ou foi movido. Volte para a página inicial para continuar.
+      </p>
+      <p style="margin-top: 1.4rem;">
+        <a class="btn btn-primary" href="./">Voltar ao início</a>
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Ygor Guimarães</p>
+      <p class="mono">Offensive Security · Hardware Hacking · Security Research</p>
+    </div>
+  </footer>
+</body>
+</html>
